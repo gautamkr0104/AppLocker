@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppLocker</string>
+
+    <!-- Auth -->
+    <string name="auth_title">Enter PIN for %1$s</string>
+    <string name="auth_title_pw">Enter password for %1$s</string>
+    <string name="auth_wrong">Wrong PIN, try again</string>
+    <string name="auth_wrong_pw">Wrong password, try again</string>
+    <string name="auth_lockout">Too many attempts. Wait %1$d seconds.</string>
+    <string name="auth_not_ready">AppLocker is not configured yet. Open AppLocker and create a PIN first.</string>
+    <string name="auth_ok">OK</string>
+    <string name="auth_show">Show</string>
+    <string name="auth_home">Go home</string>
+    <string name="auth_subtitle_pin">Enter your PIN to continue</string>
+    <string name="auth_subtitle_pw">Enter your password to continue</string>
+    <string name="auth_clear">Clear</string>
+
+    <!-- Setup -->
+    <string name="setup_title">Create your PIN</string>
+    <string name="setup_change_title">Change your PIN</string>
+    <string name="setup_verify_hint">Enter your current PIN or password</string>
+    <string name="setup_enter_pin">Enter a new PIN (4–8 digits)</string>
+    <string name="setup_enter_pw">Enter a new password (4–32 characters)</string>
+    <string name="setup_confirm_pin">Confirm the new PIN</string>
+    <string name="setup_confirm_pw">Confirm the new password</string>
+    <string name="setup_use_pw">Use alphanumeric password instead of PIN</string>
+    <string name="setup_next">Next</string>
+    <string name="setup_save">Save</string>
+    <string name="setup_cancel">Cancel</string>
+    <string name="setup_empty">Please enter something</string>
+    <string name="setup_wrong_current">Current PIN/password is incorrect</string>
+    <string name="setup_pin_invalid">PIN must be 4–8 digits</string>
+    <string name="setup_pw_invalid">Password must be 4–32 characters</string>
+    <string name="setup_mismatch">Entries do not match, please try again</string>
+    <string name="setup_saved">Saved</string>
+
+    <!-- Main -->
+    <string name="status_on">Protection on</string>
+    <string name="status_off">Protection off</string>
+    <string name="header_subtitle">System-level app lock</string>
+    <string name="master_label">Enable locker</string>
+    <string name="master_sub">Selected apps ask for your PIN before opening</string>
+    <string name="section_manage">MANAGE</string>
+    <string name="section_system">SYSTEM</string>
+    <string name="module_loaded">Module: loaded in system_server ✓</string>
+    <string name="module_not_loaded">Module: not loaded — enable it in LSPosed and reboot</string>
+    <string name="protected_count_fmt">Protected apps: %1$d</string>
+    <string name="row_apps">Protected apps</string>
+    <string name="row_policy">Relock policy</string>
+    <string name="row_change_pin">Change PIN / password</string>
+    <string name="row_diagnostics">Diagnostics</string>
+    <string name="row_lsposed">Open LSPosed Manager</string>
+    <string name="need_pin_first">Create a PIN first</string>
+    <string name="lsposed_not_found">LSPosed Manager not installed</string>
+
+    <!-- App list -->
+    <string name="app_search_hint">Search apps…</string>
+    <string name="app_title">Protected apps</string>
+    <string name="app_back">Back</string>
+    <string name="denylist_toast">This app is on the safety denylist and cannot be locked</string>
+
+    <!-- Policy -->
+    <string name="policy_title">Relock policy</string>
+    <string name="policy_subtitle">Choose when protected apps lock again</string>
+    <string name="policy_immediate">Lock immediately when leaving the protected app (default, most secure)</string>
+    <string name="policy_screen_off">Lock only when the screen turns off</string>
+    <string name="policy_timeout">Lock after a timeout</string>
+    <string name="policy_session">Session unlock — stay unlocked until screen off</string>
+    <string name="timeout_label">Timeout in seconds (5–3600)</string>
+    <string name="policy_save">Save</string>
+    <string name="policy_back">Back</string>
+    <string name="policy_saved">Policy saved</string>
+
+    <!-- Diagnostics -->
+    <string name="diag_title">Diagnostics</string>
+    <string name="diag_back">Back</string>
+</resources>

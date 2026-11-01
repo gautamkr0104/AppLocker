@@ -1,0 +1,30 @@
+<resources>
+    <color name="ok_green">#6FD58A</color>
+    <color name="warn_orange">#FFB65C</color>
+    <color name="accent_blue">#4C9AFF</color>
+    <color name="accent_blue_dark">#2E7BE0</color>
+    <color name="window_bg_light">#0E0F12</color>
+    <color name="window_bg_dark">#0E0F12</color>
+
+    <color name="screen_bg">#0E0F12</color>
+    <color name="surface">#1A1B1F</color>
+    <color name="surface_muted">#26272C</color>
+    <color name="text_primary">#F2F3F5</color>
+    <color name="text_secondary">#9AA0A8</color>
+    <color name="divider">#2E3036</color>
+
+    <color name="key_bg">#232429</color>
+    <color name="key_stroke">#34363C</color>
+    <color name="key_ripple">#334C9AFF</color>
+
+    <color name="danger">#FF6B66</color>
+    <color name="danger_bg">#3A1D1C</color>
+    <color name="ok_bg">#16351F</color>
+    <color name="chip_off_bg">#2A2C31</color>
+
+    <color name="header_start">#16336B</color>
+    <color name="header_end">#1F4E9E</color>
+    <color name="header_glass">#33FFFFFF</color>
+    <color name="on_header">#FFFFFF</color>
+    <color name="input_border">#39FF14</color>
+</resources>

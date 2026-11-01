@@ -1,0 +1,59 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.applocker'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.applocker"
+        minSdk 31
+        targetSdk 33
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    signingConfigs {
+        release {
+            def ks = file("../release.keystore")
+            if (ks.exists()) {
+                storeFile ks
+                storePassword project.findProperty("APPLOCKER_KS_PASS") ?: "applocker"
+                keyAlias project.findProperty("APPLOCKER_KEY_ALIAS") ?: "applocker"
+                keyPassword project.findProperty("APPLOCKER_KS_PASS") ?: "applocker"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            // The keystore is intentionally not in the repository. Contributors who
+            // provide their own ../release.keystore get a signed APK; without it the
+            // release build is simply unsigned instead of failing.
+            if (file("../release.keystore").exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    // Provided by LSPosed at runtime inside system_server; never packaged into the APK.
+    compileOnly project(':xposed-stub')
+    testImplementation 'junit:junit:4.13.2'
+}

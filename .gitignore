@@ -1,0 +1,25 @@
+# Gradle / build output
+.gradle/
+build/
+**/build/
+.gradle-cache/
+
+# Local machine configuration
+local.properties
+
+# Signing material — never publish the private key
+release.keystore
+*.jks
+*.keystore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Test artifacts
+.test-artifacts/
+
+# OS noise
+.DS_Store
+Thumbs.db
